@@ -1,0 +1,157 @@
+body
+{
+    background-color: #e3eeef;
+    zoom: 105%;
+}
+.container{
+    width: 80%;
+    background-color: #fff;
+    margin: auto;
+    padding-block: 20px;
+    border-radius: 5px;
+}
+.container .logo{
+    padding-left: 20px;
+    display: flex;
+    column-gap: 10px;
+    border-bottom: 1px solid #d8dbdd;
+    padding-bottom: 20px;
+}
+.container .logo .logo-icon
+{
+    background-color: #00f38d;
+    padding: 2px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.container .logo span {
+    align-self: center;
+    font-weight: bold;
+    font-family:  sans-serif;
+    font-size: 12px;
+}
+.content {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8dbdd;
+    color: #000;
+    font-family:  sans-serif;
+}
+.inut-links
+{
+    display: grid;
+    row-gap: 10px;
+}
+.input-feild
+{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+}
+.input-feild label,.input-feild span{
+    font-size: clamp(.7rem,.8vw, 1rem); 
+    font-family: Lexend, sans-serif;
+    margin-bottom: 5px;
+    font-weight: 300;
+    color: #000000b2;
+}
+.input-feild span
+{
+    margin-top: 5px;
+    color: #00000069;
+
+}
+.input-feild input
+{
+    padding-block: 10px;
+    padding-inline: 5px;
+    border-radius: 5px;
+    border: solid 1px #adadad;
+}
+.input-feild input::placeholder{
+    color: #adadad;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    font-size: clamp(.7rem,.4vw,.5rem)
+}
+.button
+{
+    display: grid;
+    margin-top: 10px;
+}
+
+.button button{
+    background: #00f38d;
+    align-items: center;
+    border: 1px solid #00f38d;
+    border-radius: 5rem;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: -.048rem;
+    padding: 1rem 3rem .9rem;
+    text-align: center;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    justify-self: flex-end;
+}
+.button button:hover{
+    color: #e3eeef;
+    
+}
+.links .link
+{
+    display: flex;
+    padding-inline: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8dbdd;
+    padding-block: 10px;   
+}
+.links .link span
+{
+    color: #adadad;
+    font-family:'Helvetica Neue';
+    cursor: pointer;
+}
+
+.links .link .actions{
+    display: grid;
+    grid-template-columns: 30px 30px;
+}
+.links .link .actions .icon{
+    cursor: pointer;
+}
+.icon{
+    transition:  background-color .3s ease,color .3s ease;
+}
+.icon:hover{
+    background-color: #00f38d;
+    color: #e3eeef;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.icon:last-child:hover{
+    background-color: red;
+    color: #e3eeef;
+}
+@media screen and (max-width:700px)
+{
+    .container
+    {
+        width: 100%;
+    }
+    .input-feild{
+        margin: initial;
+        width: 90%;
+    }
+    .input-feild input
+    {
+        /* width: 200%; */
+        margin: initial;
+    }
+}
